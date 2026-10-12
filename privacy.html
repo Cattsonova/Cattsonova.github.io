@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#1f0838">
 <title>Privacy Policy · Zombie Jackpot</title>
-<meta name="description" content="Privacy policy of the Zombie Jackpot mobile game: what stays on your device, how Google AdMob ads and Google Play purchases work, and your choices.">
+<meta name="description" content="Privacy policy of the Zombie Jackpot mobile game: what stays on your device, gameplay analytics and crash reports (Firebase), how Google AdMob ads and Google Play purchases work, and your choices.">
 <link rel="icon" href="icon-512.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-512.png">
 <link rel="alternate" hreflang="tr" href="gizlilik.html">
@@ -21,7 +21,7 @@
 
   <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Zombie Jackpot (Android and iPhone) · Effective date: 11 October 2026</p>
+    <p class="meta">Zombie Jackpot (Android and iPhone) · Effective date: 12 October 2026</p>
 
     <p>This policy explains what information the mobile game <strong>Zombie Jackpot</strong> (the “app”, package
     <code>com.zombiejackpot.game</code>) uses, why, and the choices you have. The app is developed and published by
@@ -31,16 +31,18 @@
       <h2 id="glance">At a glance</h2>
       <ul>
         <li><strong>No account, no sign-up.</strong> We never ask for your name, email address or phone number.</li>
-        <li><strong>We have no servers.</strong> Your progress, coins, items, settings and play statistics are stored only on your device.</li>
+        <li><strong>Your game is saved on your device.</strong> Progress, coins, items and settings stay on your phone; we have no servers of our own.</li>
+        <li><strong>Gameplay analytics and crash reports</strong> (Google Analytics for Firebase, Firebase Crashlytics) tell us how the game is played and when it breaks: game events with a random app ID, never your name, email or advertising ID. Where the law requires it, only with your consent; you can turn it off in Settings → GAMEPLAY ANALYTICS.</li>
         <li><strong>Ads are provided by Google AdMob</strong>, which uses your device’s advertising ID and similar data. Where the law requires it, you are asked for consent first, and you can change your choice at any time.</li>
         <li><strong>Purchases are handled by Google Play.</strong> We never see your payment details.</li>
-        <li><strong>We do not sell your data</strong>, and we do not use any analytics or tracking tool of our own.</li>
+        <li><strong>We do not sell your data</strong>, and analytics are never used for advertising or to track you across other apps.</li>
       </ul>
     </section>
 
     <nav aria-label="Contents">
       <ul class="toc">
         <li><a href="#device">Data stored on your device</a></li>
+        <li><a href="#analytics">Gameplay analytics and crash reports (Firebase)</a></li>
         <li><a href="#ads">Advertising (Google AdMob)</a></li>
         <li><a href="#consent">Consent and your ad choices</a></li>
         <li><a href="#purchases">In-app purchases (Google Play)</a></li>
@@ -64,14 +66,58 @@
       <li>settings: language, control mode, announcer voice and vibration on/off;</li>
       <li>local play statistics used to balance the game (for example number of runs, floors reached, run length and what ended a run);</li>
       <li>bookkeeping for ads, reviews and sharing (for example when the last ad was shown, when a review was last requested, the day of the last share bonus);</li>
-      <li>which in-app purchases you own, so that they keep working.</li>
+      <li>which in-app purchases you own, so that they keep working;</li>
+      <li>a performance log (how smoothly the game ran: frame times, the game screen and floor at the time, and basic
+      device details such as the phone model, Android/iOS version, graphics chip and screen size), kept only for the
+      current and the previous session.</li>
     </ul>
-    <p>This information is <strong>not sent to us</strong> or to anyone else by the app. If backup is turned on in your
+    <p>The app does <strong>not send this saved data</strong> to us or to anyone else. (Separately, gameplay analytics and
+    crash reports are sent as described in section 2.) If backup is turned on in your
     Android settings, Android’s automatic backup may include the app’s data in your device backup in your Google
     account, so that your progress can be restored after a reinstall or on a new phone. That backup is stored and
     managed by Google under your Google account settings.</p>
 
-    <h2 id="ads">2. Advertising (Google AdMob)</h2>
+    <h2 id="analytics">2. Gameplay analytics and crash reports (Firebase)</h2>
+    <p>To see how the game is played and to fix problems, the app uses <strong>Google Analytics for Firebase</strong> and
+    <strong>Firebase Crashlytics</strong>, services of Google (Google LLC / Google Ireland Limited) that act on our
+    behalf as data processors. They send the following to Google’s servers, where only we can see it, as statistics in
+    the Firebase console:</p>
+    <ul>
+      <li><strong>gameplay events</strong>: for example a run’s start and end, the floor and score reached, how long it
+      lasted and what ended it, coins earned and spent in the game, episodes, the daily tower, achievements, which screens
+      and in-game shop items were viewed, whether an ad offer was shown or accepted, store purchases (product and price,
+      never payment details), settings changes, and coarse performance figures (a frame-rate range and the graphics
+      quality level);</li>
+      <li>an <strong>app-instance ID</strong>: a random ID that the Firebase SDK creates for this installation. It is not
+      your name or account. The app turns off the collection of the advertising ID (Android advertising ID; IDFA and IDFV
+      on iPhone) and of the Android ID for analytics, and it does not set any user ID of its own;</li>
+      <li><strong>device information</strong>: device model, operating system version, language, screen size, app version
+      and the date of the first launch;</li>
+      <li>an <strong>approximate location</strong> (country, region or city) that Google derives from your IP address; the
+      IP address itself is not stored by Google Analytics and is never shown to us;</li>
+      <li><strong>crash and error reports</strong> (Crashlytics): technical details of a crash or a game error (where in
+      the code it happened, the device’s state such as free memory and orientation, the game state such as the screen,
+      stage and quality level, and the last game moments before it), with the Crashlytics installation ID. Error messages
+      are cleaned of anything that looks like personal data before they are sent.</li>
+    </ul>
+    <p>We use this only to improve the game: its difficulty and balance, the coin economy, performance on different
+    phones, and to find and fix crashes. It is <strong>never used for advertising</strong>, never combined with other data
+    to identify you, Google Signals is off, and we do not sell it. We never collect your name, email address, phone number,
+    precise location, contacts or anything you type.</p>
+    <p><strong>Consent.</strong> Where the law requires consent (for example in the European Economic Area, the United
+    Kingdom and Switzerland), analytics identifiers are only stored if you agree in Google’s consent form (the same form
+    as for ads, see section 4); until then Google Analytics works in a restricted mode without identifiers (Google Consent
+    Mode). You can change your choice in <strong>Settings → PRIVACY OPTIONS</strong>. Elsewhere, and for crash reports, we
+    rely on our legitimate interest in a working, well-balanced game.</p>
+    <p><strong>Turning it off.</strong> In the game, switch off <strong>Settings → GAMEPLAY ANALYTICS</strong>. Both
+    Google Analytics and Crashlytics then stop collecting on your device, and crash reports not yet sent are deleted. You
+    can switch it on again at any time.</p>
+    <p><strong>Retention.</strong> Analytics event data is kept for <strong>14 months</strong> and then deleted
+    automatically (aggregated reports without any ID may remain). Crash reports are kept by Crashlytics for 90 days.
+    Uninstalling the app resets the app-instance ID. See
+    <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
+
+    <h2 id="ads">3. Advertising (Google AdMob)</h2>
     <p>The app is free and is funded by ads served by <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited):
     optional rewarded videos that you choose to watch for an in-game reward (for example a second chance or double coins),
     and occasional full-screen ads between games.</p>
@@ -95,7 +141,7 @@
     </ul>
     <p>The app is configured so that ads are suitable for a general audience (maximum ad content rating “PG”).</p>
 
-    <h2 id="consent">3. Consent and your ad choices</h2>
+    <h2 id="consent">4. Consent and your ad choices</h2>
     <ul>
       <li>Where the law requires consent (for example in the European Economic Area, the United Kingdom and Switzerland),
       the app shows Google’s consent form (Google User Messaging Platform) before any ad is requested. No ad is requested
@@ -104,12 +150,13 @@
       ads are based on context, such as the app and your approximate location, and Google may still use limited data
       for frequency capping, measurement and fraud prevention.</li>
       <li>You can change or withdraw your choice at any time: in the game, open <strong>Settings → PRIVACY OPTIONS</strong>
-      (shown where the consent form applies). If you withdraw consent, the app stops requesting ads that rely on it.</li>
+      (shown where the consent form applies). If you withdraw consent, the app stops requesting ads that rely on it, and
+      Google Analytics stops storing analytics identifiers (section 2).</li>
       <li>In your Android settings (Settings → Google → Ads, or Settings → Privacy → Ads on some phones) you can reset or
       delete your advertising ID and opt out of personalized ads for all apps.</li>
     </ul>
 
-    <h2 id="purchases">4. In-app purchases (Google Play)</h2>
+    <h2 id="purchases">5. In-app purchases (Google Play)</h2>
     <p>The app may offer optional in-app purchases (for example removing the between-game ads, outfits or coin packs).
     Payments are processed entirely by <strong>Google Play</strong>; we never receive your card or other payment details.
     Google Play tells the app what you bought (product, purchase status and a purchase token) so that the app can deliver
@@ -119,12 +166,12 @@
     Privacy Policy</a> and the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google
     Payments Privacy Notice</a>.</p>
 
-    <h2 id="reviews">5. Ratings and reviews</h2>
+    <h2 id="reviews">6. Ratings and reviews</h2>
     <p>Now and then, after a good moment in the game, the app may ask Google Play to show its rating window (Google Play
     In-App Review). This window is run entirely by Google Play. The app does not learn whether you rated the game or what
     you wrote. Reviews you post are public on Google Play under your Google account, under Google’s terms.</p>
 
-    <h2 id="sharing">6. Sharing</h2>
+    <h2 id="sharing">7. Sharing</h2>
     <ul>
       <li>The <strong>Share</strong> button creates a picture of your result on your device (score, floor, outfit and a link
       to the game) and opens Android’s share window. You choose whether to share it and with which app or person. We do not
@@ -133,24 +180,31 @@
       details: app version, platform, screen size, language and a shortened browser engine version). Nothing is sent
       unless you choose to share it. If you send it to us, we use it only to improve the game’s balance and delete it when
       it is no longer needed.</li>
+      <li>In <strong>Settings → PERFORMANCE REPORT</strong> you can share a technical report of how smoothly the game ran on
+      your device (frame times, the game screen and floor at the time, your settings, and device details: app version, the
+      phone model and Android/iOS version as reported by the system web view, graphics chip, screen size, processor core
+      count, memory class and language). It contains no name, account, advertising ID, location or contacts. Nothing is
+      sent unless you choose to share it. If you send it to us, we use it only to fix performance problems and delete it
+      when it is no longer needed.</li>
       <li>If you email us, we use your email address and message only to reply to you.</li>
     </ul>
 
-    <h2 id="permissions">7. Device permissions</h2>
-    <p>The app uses internet access (to load ads and to talk to Google Play) and vibration (for haptic feedback, which you
+    <h2 id="permissions">8. Device permissions</h2>
+    <p>The app uses internet access (to load ads, to send gameplay analytics and crash reports, and to talk to Google Play) and vibration (for haptic feedback, which you
     can turn off in Settings). The ads SDK adds the permissions it needs to read the advertising ID and use Android’s ads
     privacy features. Google Play adds the billing permission for purchases. The app does <strong>not</strong> ask for
     access to your location, contacts, photos, camera, microphone or files.</p>
 
-    <h2 id="children">8. Children</h2>
+    <h2 id="children">9. Children</h2>
     <p>Zombie Jackpot is not directed to children under 13, and we do not knowingly collect personal information from
     children. The app does not ask for any personal information from anyone. Ad requests are not tagged as directed to
     children, and ad content is limited to a general audience (“PG”). If you believe a child has provided personal
     information to us (for example by email), contact us and we will delete it.</p>
 
-    <h2 id="retention">9. Keeping and deleting data</h2>
+    <h2 id="retention">10. Keeping and deleting data</h2>
     <ul>
-      <li>We do not keep any of your data on servers of our own.</li>
+      <li>We have no servers of our own. Gameplay analytics are kept in Google Analytics for 14 months and crash reports in
+      Crashlytics for 90 days, then deleted automatically (section 2).</li>
       <li>The game data on your device stays until you delete it: Android Settings → Apps → Zombie Jackpot → Storage →
       Clear storage, or uninstall the app. A copy in your Google backup is managed in your Google account and device
       backup settings.</li>
@@ -159,21 +213,23 @@
       <li>Emails you send us are deleted when they are no longer needed to help you, or earlier on request.</li>
     </ul>
 
-    <h2 id="rights">10. Your rights</h2>
+    <h2 id="rights">11. Your rights</h2>
     <p>Depending on where you live (for example under the EU/UK GDPR, the Turkish Personal Data Protection Law No. 6698
     (KVKK) or US state privacy laws) you may have the right to access, correct or delete your personal data, to object to
-    or restrict its use, and to withdraw consent. Because we do not store personal data about you, most of these requests
+    or restrict its use, and to withdraw consent. Because we do not keep personal data about you on servers of our own, most of these requests
     concern data processed by Google; you can exercise them with Google directly (see the links above) and through the
-    ad choices described in section 3. You are always welcome to contact us at
+    ad choices described in section 4. The analytics and crash data that reach us are linked only to a random app-instance
+    ID, so we cannot tell which of it is yours: to stop it, switch off Settings → GAMEPLAY ANALYTICS; uninstalling the app
+    resets that ID. You are always welcome to contact us at
     <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>, and you may lodge a complaint with your local data protection
     authority.</p>
 
-    <h2 id="security">11. Security and international transfers</h2>
-    <p>Game data on your phone is protected by Android’s app sandbox. Data sent by the Google SDKs is encrypted in transit
+    <h2 id="security">12. Security and international transfers</h2>
+    <p>Game data on your phone is protected by Android’s app sandbox. Data sent by the Google SDKs (ads, analytics and crash reports) is encrypted in transit
     (TLS). Google may process data in countries other than yours, including the United States, under appropriate
     safeguards described in its privacy policy.</p>
 
-    <h2 id="ios">12. On iPhone (iOS)</h2>
+    <h2 id="ios">13. On iPhone (iOS)</h2>
     <p>The iPhone version works the same way, with these differences:</p>
     <ul>
       <li><strong>Tracking permission.</strong> Before ads start, iOS may show Apple’s “Allow Zombie Jackpot to track your
@@ -182,6 +238,9 @@
       time in iOS Settings → Privacy &amp; Security → Tracking.</li>
       <li><strong>Ad measurement.</strong> The ads SDK may use Apple’s SKAdNetwork / ad attribution, which reports ad
       results to advertisers without identifying you.</li>
+      <li><strong>Analytics.</strong> Gameplay analytics and crash reports work as in section 2. On iPhone, analytics never
+      uses the advertising identifier (IDFA) or the identifier for vendors (IDFV), and the tracking prompt above is only
+      about ads.</li>
       <li><strong>Storage and backup.</strong> Game data is kept in the app’s private storage on your iPhone and may be
       included in your iCloud or computer backup, depending on your iOS settings.</li>
       <li><strong>Purchases.</strong> In-app purchases are not offered in the iPhone version yet. If they are added, they
@@ -191,7 +250,7 @@
       <li><strong>Deleting.</strong> Deleting the app removes its data from your iPhone.</li>
     </ul>
 
-    <h2 id="changes">13. Changes to this policy and contact</h2>
+    <h2 id="changes">14. Changes to this policy and contact</h2>
     <p>If the app’s use of data changes, we will update this page and its effective date before the change takes effect.
     Contact: <strong>Burak Başoğul</strong> · <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a></p>
   </main>
