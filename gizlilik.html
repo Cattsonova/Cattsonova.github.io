@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#1f0838">
 <title>Gizlilik Politikası · Zombie Jackpot</title>
-<meta name="description" content="Zombie Jackpot mobil oyununun gizlilik politikası: cihazında kalan veriler, oyun analizleri ve çökme raporları (Firebase), Google AdMob reklamları ve Google Play satın almaları nasıl çalışır, seçeneklerin neler.">
+<meta name="description" content="iPhone ve Android için Zombie Jackpot mobil oyununun gizlilik politikası: cihazında kalan veriler, oyun analizleri ve çökme raporları (Firebase), Google AdMob reklamları, isteğe bağlı bildirimler, App Store (RevenueCat ile) ve Google Play satın almaları nasıl çalışır, seçeneklerin neler.">
 <link rel="icon" href="icon-512.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-512.png">
 <link rel="alternate" hreflang="en" href="privacy.html">
@@ -21,21 +21,22 @@
 
   <main class="doc">
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Zombie Jackpot (Android ve iPhone) · Yürürlük tarihi: 12 Ekim 2026</p>
+    <p class="meta">Zombie Jackpot (iPhone ve Android) · Yürürlük tarihi: 23 Ekim 2026</p>
 
-    <p>Bu politika, <strong>Zombie Jackpot</strong> mobil oyununun (“uygulama”, paket adı <code>com.zombiejackpot.game</code>)
-    hangi bilgileri neden kullandığını ve senin hangi seçeneklere sahip olduğunu açıklar. Uygulamayı
-    <strong>Burak Başoğul</strong> (“biz”) geliştirir ve yayımlar. Sorular için:
-    <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>.</p>
+    <p>Bu politika, <strong>Zombie Jackpot</strong> mobil oyununun (“uygulama”; App Store’daki adı “Zombie Jackpot: Kule
+    Zıplama”; iPhone’da ve Android’de uygulama kimliği <code>com.zombiejackpot.game</code>) hangi bilgileri neden
+    kullandığını ve senin hangi seçeneklere sahip olduğunu açıklar. Uygulamayı <strong>Burak Başoğul</strong> (“biz”)
+    geliştirir ve yayımlar. Sorular için: <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>.</p>
 
     <section class="glance" aria-labelledby="ozet">
       <h2 id="ozet">Kısaca</h2>
       <ul>
         <li><strong>Hesap yok, üyelik yok.</strong> Adını, e-posta adresini ya da telefon numaranı hiçbir zaman istemeyiz.</li>
-        <li><strong>Oyunun cihazında kaydedilir.</strong> İlerlemen, coin’lerin, kıyafetlerin ve ayarların telefonunda kalır; kendimize ait sunucumuz yok.</li>
+        <li><strong>Oyunun cihazında kaydedilir.</strong> İlerlemen, altınların, kıyafetlerin ve ayarların telefonunda kalır; kendimize ait sunucumuz yok.</li>
         <li><strong>Oyun analizleri ve çökme raporları</strong> (Google Analytics for Firebase, Firebase Crashlytics) oyunun nasıl oynandığını ve ne zaman bozulduğunu bize gösterir: rastgele bir uygulama kimliğiyle oyun olayları; adın, e-postan ya da reklam kimliğin asla. Yasanın gerektirdiği yerlerde yalnızca iznin varsa; Ayarlar → OYUN ANALİTİĞİ’nden kapatabilirsin.</li>
-        <li><strong>Reklamları Google AdMob sunar</strong>; cihazının reklam kimliğini ve benzeri verileri kullanır. Yasanın gerektirdiği yerlerde önce iznin sorulur ve kararını istediğin zaman değiştirebilirsin.</li>
-        <li><strong>Satın almaları Google Play yürütür.</strong> Ödeme bilgilerini hiçbir zaman görmeyiz.</li>
+        <li><strong>Reklamları Google AdMob sunar</strong>; cihazının reklam kimliğini ve benzeri verileri kullanır. Yasanın gerektirdiği yerlerde önce iznin sorulur (iPhone’da reklam kimliğinin kullanılıp kullanılamayacağına Apple’ın takip sorusu karar verir) ve kararını istediğin zaman değiştirebilirsin.</li>
+        <li><strong>İsteğe bağlı uygulama içi satın almaları</strong> iPhone’da Apple (App Store), Android’de Google Play yürütür; iPhone’da satın alma durumunu bizim adımıza RevenueCat kontrol eder. Ödeme bilgilerini hiçbir zaman görmeyiz.</li>
+        <li><strong>Bildirimler isteğe bağlıdır.</strong> Hatırlatmalar telefonunda planlanır; duyurular Firebase Cloud Messaging ile gelir. Ayarlar → BİLDİRİMLER’den kapatabilirsin.</li>
         <li><strong>Verilerini satmayız</strong>; analizler asla reklam için ya da seni başka uygulamalarda takip etmek için kullanılmaz.</li>
       </ul>
     </section>
@@ -46,7 +47,9 @@
         <li><a href="#analiz">Oyun analizleri ve çökme raporları (Firebase)</a></li>
         <li><a href="#reklam">Reklamlar (Google AdMob)</a></li>
         <li><a href="#izin">İzin ve reklam tercihlerin</a></li>
-        <li><a href="#satin-alma">Uygulama içi satın almalar</a></li>
+        <li><a href="#satin-alma">Uygulama içi satın almalar (App Store, Google Play)</a></li>
+        <li><a href="#bildirim">Bildirimler</a></li>
+        <li><a href="#baglanti">Mağaza ayarları ve saat kontrolü</a></li>
         <li><a href="#degerlendirme">Puan ve yorumlar</a></li>
         <li><a href="#paylasim">Paylaşım</a></li>
         <li><a href="#izinler">Cihaz izinleri</a></li>
@@ -61,22 +64,22 @@
 
     <h2 id="cihaz">1. Cihazında saklanan veriler</h2>
     <p>Oyununu kaydetmek için uygulama aşağıdakileri telefonunda, uygulamanın kendine ait özel depolama alanında
-    (uygulamanın web deposu ve Android uygulama tercihleri) tutar:</p>
+    (uygulamanın tercihleri ve dosyaları) tutar:</p>
     <ul>
-      <li>ilerleme: en iyi skor ve kat, coin bakiyesi, açılan ve giyilen kıyafetler, başarımlar, günlük ve bölüm ilerlemesi;</li>
-      <li>ayarlar: dil, kontrol modu, spiker sesi ve titreşimin açık/kapalı durumu;</li>
+      <li>ilerleme: en iyi skor ve kat, altın bakiyesi, açılan ve giyilen kıyafetler ve eşyalar, başarımlar, günlük ve bölüm ilerlemesi;</li>
+      <li>ayarlar: dil, müzik ve ses efektleri, kontrol modu ve solak kontroller, spiker sesi, titreşim ve bildirimlerin açık/kapalı durumu;</li>
       <li>oyunu dengelemek için yerel oyun istatistikleri (ör. koşu sayısı, ulaşılan katlar, koşu süresi, koşuyu neyin bitirdiği);</li>
-      <li>reklam, değerlendirme ve paylaşım kayıtları (ör. son reklamın ne zaman gösterildiği, puan isteğinin en son ne zaman yapıldığı, son paylaşım bonusunun günü);</li>
-      <li>çalışmaya devam etmeleri için sahip olduğun uygulama içi satın almalar;</li>
+      <li>reklam, değerlendirme, paylaşım ve bildirim kayıtları (ör. son reklamın ne zaman gösterildiği, puan isteğinin en son ne zaman yapıldığı, son haftalık paylaşım bonusunun ne zaman verildiği, hangi hatırlatmaların planlandığı);</li>
+      <li>çalışmaya devam etmeleri için sahip olduğun uygulama içi satın almalar ve VIP Kulüp aboneliğinin etkin olup olmadığı;</li>
       <li>oyunun ne kadar akıcı çalıştığını gösteren bir performans kaydı (kare süreleri, o anki oyun ekranı ve kat,
-      telefon modeli, Android/iOS sürümü, grafik işlemcisi ve ekran boyutu gibi temel cihaz bilgileri); yalnızca şu anki
-      ve bir önceki oturum için tutulur.</li>
+      telefon modeli, Android/iOS sürümü ve ekran boyutu gibi temel cihaz bilgileri); yalnızca şu anki ve bir önceki
+      oturum için tutulur.</li>
     </ul>
     <p>Uygulama bu kayıtlı verileri <strong>bize ya da başka birine göndermez</strong>. (Bundan ayrı olarak oyun
-    analizleri ve çökme raporları 2. bölümde anlatıldığı gibi gönderilir.) Android ayarlarında yedekleme açıksa,
-    Android’in otomatik yedeklemesi uygulama verilerini Google hesabındaki cihaz yedeğine ekleyebilir; böylece
-    uygulamayı yeniden kurduğunda ya da yeni telefonda ilerlemen geri gelebilir. Bu yedek, Google hesabının ayarlarına
-    göre Google tarafından saklanır ve yönetilir.</p>
+    analizleri ve çökme raporları 2. bölümde, satın alma kontrolleri 5. bölümde anlatıldığı gibi gönderilir.) Android
+    ayarlarında yedekleme açıksa, Android’in otomatik yedeklemesi uygulama verilerini Google hesabındaki cihaz yedeğine
+    ekleyebilir; böylece uygulamayı yeniden kurduğunda ya da yeni telefonda ilerlemen geri gelebilir. Bu yedek, Google
+    hesabının ayarlarına göre Google tarafından saklanır ve yönetilir. iPhone için 15. bölüme bak.</p>
 
     <h2 id="analiz">2. Oyun analizleri ve çökme raporları (Firebase)</h2>
     <p>Oyunun nasıl oynandığını görmek ve sorunları düzeltmek için uygulama, Google’ın (Google LLC / Google Ireland
@@ -85,7 +88,7 @@
     biz, Firebase konsolunda istatistik olarak görürüz:</p>
     <ul>
       <li><strong>oyun olayları</strong>: ör. bir koşunun başlaması ve bitmesi, ulaşılan kat ve skor, ne kadar sürdüğü ve
-      neyin bitirdiği, oyunda kazanılan ve harcanan coin’ler, bölümler, günlük kule, başarımlar, hangi ekranlara ve oyun
+      neyin bitirdiği, oyunda kazanılan ve harcanan altınlar, bölümler, günlük kule, başarımlar, hangi ekranlara ve oyun
       içi mağaza ürünlerine bakıldığı, bir reklam teklifinin gösterilip kabul edilip edilmediği, mağaza satın almaları
       (ürün ve fiyat; ödeme bilgileri asla), ayar değişiklikleri ve kaba performans değerleri (kare hızı aralığı ve grafik
       kalite seviyesi);</li>
@@ -102,7 +105,7 @@
       durumu ve hatadan hemen önceki son oyun anları) ve Crashlytics kurulum kimliği. Hata mesajları gönderilmeden önce
       kişisel veriye benzeyen her şeyden temizlenir.</li>
     </ul>
-    <p>Bunları yalnızca oyunu iyileştirmek için kullanırız: zorluğu ve dengesi, coin ekonomisi, farklı telefonlardaki
+    <p>Bunları yalnızca oyunu iyileştirmek için kullanırız: zorluğu ve dengesi, altın ekonomisi, farklı telefonlardaki
     performans, çökmeleri bulup düzeltmek. <strong>Asla reklam için kullanılmaz</strong>, seni tanımak için başka
     verilerle birleştirilmez, Google Sinyalleri kapalıdır ve satılmaz. Adını, e-posta adresini, telefon numaranı, kesin
     konumunu, rehberini ya da yazdığın hiçbir şeyi toplamayız.</p>
@@ -120,13 +123,16 @@
     <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase’de gizlilik ve güvenlik</a>.</p>
 
     <h2 id="reklam">3. Reklamlar (Google AdMob)</h2>
-    <p>Uygulama ücretsizdir ve <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited) tarafından sunulan
-    reklamlarla finanse edilir: oyun içi bir ödül (ör. ikinci şans ya da iki kat coin) için izlemeyi kendin seçtiğin
-    ödüllü videolar ve oyunlar arasında ara sıra gösterilen tam ekran reklamlar.</p>
+    <p>Uygulamayı ücretsiz oynayabilirsin; uygulama <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited)
+    tarafından sunulan reklamlarla ve isteğe bağlı satın almalarla finanse edilir: oyun içi bir ödül (ör. ikinci şans ya
+    da iki kat altın) için izlemeyi kendin seçtiğin ödüllü videolar ve oyunlar arasında ara sıra gösterilen, koşu
+    sırasında asla çıkmayan tam ekran reklamlar. Reklamları Kaldır satın alması ve VIP Kulüp aboneliği oyunlar arasındaki
+    reklamları kapatır; ödüllü videolar isteğe bağlı olarak kalır.</p>
     <p>Reklam istendiğinde ve gösterildiğinde, uygulamanın içindeki Google Mobile Ads SDK’sı şunları otomatik olarak
     toplayıp Google ile paylaşabilir:</p>
     <ul>
-      <li><strong>cihaz kimlikleri</strong>: Android reklam kimliği ve uygulama grubu kimliği (app set ID);</li>
+      <li><strong>cihaz kimlikleri</strong>: Android’de reklam kimliği ve uygulama grubu kimliği (app set ID); iPhone’da
+      satıcı kimliği (IDFV) ve yalnızca takibe izin verirsen reklam kimliği (IDFA, 15. bölüme bak);</li>
       <li><strong>IP adresin</strong>; bundan yaklaşık konum (ülke ya da şehir gibi) tahmin edilebilir;</li>
       <li>uygulama açılışları, reklam görüntülemeleri, dokunmalar ve video izlemeleri gibi <strong>etkileşimler</strong>;</li>
       <li>uygulama ve reklam SDK’sı hakkında <strong>tanılama ve performans bilgileri</strong>;</li>
@@ -155,87 +161,138 @@
       <li>Kararını istediğin zaman değiştirebilir ya da geri alabilirsin: oyunda <strong>Ayarlar → GİZLİLİK
       SEÇENEKLERİ</strong> (izin formunun geçerli olduğu yerlerde görünür). İznini geri alırsan uygulama bu izne dayanan
       reklamları istemeyi bırakır ve Google Analytics analiz kimliklerini saklamayı bırakır (2. bölüm).</li>
+      <li>iPhone’da ayrıca Apple’ın takip sorusu geçerlidir (15. bölüm).</li>
       <li>Android ayarlarından (Ayarlar → Google → Reklamlar ya da bazı telefonlarda Ayarlar → Gizlilik → Reklamlar)
       reklam kimliğini sıfırlayabilir veya silebilir ve tüm uygulamalar için kişiselleştirilmiş reklamları
       kapatabilirsin.</li>
     </ul>
 
-    <h2 id="satin-alma">5. Uygulama içi satın almalar (Google Play)</h2>
-    <p>Uygulama isteğe bağlı satın almalar sunabilir (ör. oyunlar arasındaki reklamları kaldırma, kıyafetler ya da coin paketleri).
-    Ödemeler tamamen <strong>Google Play</strong> tarafından işlenir; kart ya da diğer ödeme bilgilerini hiçbir zaman
-    almayız. Google Play, satın aldığın şeyi teslim edebilmesi ve geri yükleyebilmesi için uygulamaya ne aldığını
-    (ürün, satın alma durumu ve bir satın alma jetonu) bildirir; bu kontrol cihazında yapılır ve sonucu yalnızca
-    cihazında saklanır. Google ayrıca Google Play Console’da muhasebe, iade ve destek için bize sınırlı sipariş
-    bilgisi (ör. sipariş numarası, ürün, tarih, fiyat ve ülke) gösterir. Ayrıntılar:
-    <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> ve
-    <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=tr" rel="noopener">Google
-    Payments Gizlilik Bildirimi</a>.</p>
-
-    <h2 id="degerlendirme">6. Puan ve yorumlar</h2>
-    <p>Oyunda güzel bir andan sonra, ara sıra, uygulama Google Play’den puanlama penceresini göstermesini isteyebilir
-    (Google Play Uygulama İçi Değerlendirme). Bu pencereyi tamamen Google Play yürütür. Uygulama, puan verip vermediğini
-    ya da ne yazdığını öğrenmez. Yazdığın yorumlar, Google’ın şartlarına göre Google hesabınla Google Play’de herkese
-    açık görünür.</p>
-
-    <h2 id="paylasim">7. Paylaşım</h2>
+    <h2 id="satin-alma">5. Uygulama içi satın almalar (App Store, Google Play)</h2>
+    <p>Uygulama isteğe bağlı satın almalar sunar: altın paketleri, premium kostümler, Başlangıç Paketi (özel bir kostüm
+    ve altın), Reklamları Kaldır (oyunlar arasında reklam yok) ve iptal edene kadar her ay otomatik yenilenen bir abonelik
+    olan <strong>VIP Kulüp</strong>. Her ürünün içeriği sabittir; rastgele hiçbir şey satılmaz. Kart ya da diğer ödeme
+    bilgilerini hiçbir zaman almayız.</p>
     <ul>
-      <li><strong>Paylaş</strong> düğmesi sonucunun resmini cihazında oluşturur (skor, kat, kıyafet ve oyunun bağlantısı)
-      ve Android’in paylaşım penceresini açar. Paylaşıp paylaşmayacağını ve hangi uygulamayla ya da kiminle paylaşacağını
-      sen seçersin. Bize göndermediğin sürece paylaştığın hiçbir şey bize ulaşmaz.</li>
-      <li><strong>Ayarlar → İSTATİSTİKLERİ PAYLAŞ</strong> ile oyun istatistiklerini kopyalayabilir ya da paylaşabilirsin
-      (oyun istatistikleri ve temel teknik bilgiler: uygulama sürümü, platform, ekran boyutu, dil ve kısaltılmış tarayıcı
-      motoru sürümü). Sen paylaşmayı seçmedikçe hiçbir şey gönderilmez. Bize gönderirsen yalnızca oyunun dengesini
-      iyileştirmek için kullanır, işimiz bitince sileriz.</li>
-      <li><strong>Ayarlar → PERFORMANS RAPORU</strong> ile oyunun cihazında ne kadar akıcı çalıştığını gösteren teknik bir
-      raporu paylaşabilirsin (kare süreleri, o anki oyun ekranı ve kat, ayarların ve cihaz bilgileri: uygulama sürümü,
-      sistemin web görünümünün bildirdiği telefon modeli ve Android/iOS sürümü, grafik işlemcisi, ekran boyutu, işlemci
-      çekirdek sayısı, bellek sınıfı ve dil). İçinde ad, hesap, reklam kimliği, konum ya da kişi bilgisi yoktur. Sen
-      paylaşmayı seçmedikçe hiçbir şey gönderilmez. Bize gönderirsen yalnızca performans sorunlarını gidermek için
-      kullanır, işimiz bitince sileriz.</li>
+      <li><strong>iPhone’da</strong> ödemeleri App Store üzerinden <strong>Apple</strong> işler ve Apple Hesabından tahsil
+      eder. Neyi satın aldığını ve VIP Kulüp’ün etkin olup olmadığını öğrenmek ve satın almalarını geri yüklemek için
+      uygulama, bizim adımıza çalışan <strong>RevenueCat</strong> (RevenueCat, Inc., ABD) hizmetini kullanır. RevenueCat
+      şunları alır: SDK’sının cihazında oluşturduğu anonim bir kimlik (adın, e-posta adresin ya da Apple Hesabın değil),
+      App Store işlem bilgileri (ürün; satın alma, yenilenme ve bitiş tarihleri; fiyat ve para birimi; mağaza ülkesi ve
+      işlem numaraları) ve temel teknik bilgiler (uygulama sürümü, iOS sürümü ve dil); uygulamanın bağlandığı her sunucu
+      gibi IP adresini de görür. Bu satın alma kayıtlarını RevenueCat panelinde görürüz ve yalnızca satın almaları teslim
+      edip geri yüklemek, iade ve destek işlerini yürütmek ve muhasebe için kullanırız. Apple ayrıca App Store
+      Connect’te bize satış raporları verir. VIP Kulüp’ü iOS Ayarlar → [adın] → Abonelikler bölümünden yönetebilir ya da
+      iptal edebilirsin. Ayrıntılar: <a href="https://www.apple.com/tr/legal/privacy/" rel="noopener">Apple Gizlilik
+      Politikası</a> ve <a href="https://www.revenuecat.com/privacy" rel="noopener" hreflang="en">RevenueCat Gizlilik
+      Politikası</a> (İngilizce).</li>
+      <li><strong>Android’de</strong> ödemeler tamamen <strong>Google Play</strong> tarafından işlenir. Google Play,
+      satın aldığın şeyi teslim edebilmesi ve geri yükleyebilmesi için uygulamaya ne aldığını (ürün, satın alma durumu ve
+      bir satın alma jetonu) bildirir; bu kontrol cihazında yapılır ve sonucu yalnızca cihazında saklanır. Google ayrıca
+      Google Play Console’da muhasebe, iade ve destek için bize sınırlı sipariş bilgisi (ör. sipariş numarası, ürün,
+      tarih, fiyat ve ülke) gösterir. VIP Kulüp’ü Google Play → Ödemeler ve abonelikler → Abonelikler bölümünden
+      yönetebilir ya da iptal edebilirsin. Ayrıntılar:
+      <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> ve
+      <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=tr" rel="noopener">Google
+      Payments Gizlilik Bildirimi</a>.</li>
+    </ul>
+
+    <h2 id="bildirim">6. Bildirimler</h2>
+    <p>Oyun iki tür bildirim gösterebilir. İkisini de istediğin zaman <strong>Ayarlar → BİLDİRİMLER</strong>’den ya da
+    telefonunun ayarlarından kapatabilirsin.</p>
+    <ul>
+      <li><strong>Hatırlatmaları</strong> uygulama telefonunda kendisi planlar (ör. son oynadığın günden birkaç gün sonra;
+      gece asla). Bunları planlamak için hiçbir sunucuya bir şey gönderilmez.</li>
+      <li><strong>Duyuruları</strong> oyunla ilgili olarak Firebase konsolundan biz göndeririz; <strong>Firebase Cloud
+      Messaging</strong> (Google) ile, iPhone’da Apple Anlık Bildirim Servisi (APNs) üzerinden ulaşırlar. Bildirimler
+      açıkken uygulama bu kurulum için bir kayıt jetonu (token) alır ve tüm oyuncuların ortak olduğu bir konuya katılır;
+      Google (iPhone’da ayrıca Apple) bu jetonu yalnızca mesajları ulaştırmak için kullanır. Kimin mesaj aldığını
+      görmeyiz; yalnızca kaç mesaj gönderildiği ve açıldığı gibi toplamları görürüz. Bildirimleri kapatmak jetonu siler.</li>
+      <li>iPhone’da ve Android 13 ve üstünde bildirimler ancak oyunda kabul edip sistemin penceresinde izin verdikten sonra
+      başlar. Sistemin izin sormadığı Android 12 ve altında ilk açılıştan itibaren açıktır, sen kapatana kadar.</li>
+    </ul>
+
+    <h2 id="baglanti">7. Mağaza ayarları ve saat kontrolü</h2>
+    <ul>
+      <li><strong>Mağaza ve altın ayarları (yalnızca Android).</strong> Android sürümü, Firebase konsolunda belirlediğimiz
+      birkaç ayarı indirmek için <strong>Firebase Remote Config</strong>’i (Google) kullanır: mağazada bir açılış teklifi
+      gösterilip gösterilmeyeceği, bunun hangi ürün olduğu ve ne zaman bittiği ve koşularda kazanılan altın miktarı. Bunları
+      alırken uygulama Google’a Firebase kurulum kimliğini ve temel uygulama ve cihaz bilgilerini (uygulama sürümü, dil ve
+      ülke gibi) gönderir. Bu değerler yalnızca teklifi açıp kapatır ve altın ödüllerini belirler; hiçbir zaman kod ya da
+      yeni içerik indirmez. <strong>iPhone sürümü Remote Config kullanmaz.</strong></li>
+      <li><strong>Haftalık paylaşım bonusu için saat kontrolü.</strong> Haftalık paylaşım bonusu (9. bölüm) telefonun
+      saatini değiştirerek alınamasın diye uygulama güncel tarihi Google’ın sunucularından okur:
+      <code>www.google.com/generate_204</code> (ya da <code>www.gstatic.com/generate_204</code>) adresine, cevabında saat
+      bilgisi olan boş bir HTTPS isteği. Bu istekte oyun verisi, kimlik ya da kişisel veri gönderilmez; her sunucu gibi
+      Google da IP adresini görür. Uygulama bu isteği açıkken birkaç kez yapar (ör. açılışta ve bir paylaşım bonusu
+      verilmeden önce) ve sonucu yalnızca bellekte tutar.</li>
+    </ul>
+
+    <h2 id="degerlendirme">8. Puan ve yorumlar</h2>
+    <p>Oyunda güzel bir andan sonra, ara sıra, uygulama mağazadan puanlama penceresini göstermesini isteyebilir (iPhone’da
+    Apple’ın puanlama penceresi, Android’de Google Play Uygulama İçi Değerlendirme). Bu pencereyi tamamen Apple ya da
+    Google yürütür. Uygulama, puan verip vermediğini ya da ne yazdığını öğrenmez. Yazdığın yorumlar, mağazanın şartlarına
+    göre hesabınla mağazada herkese açık görünür.</p>
+
+    <h2 id="paylasim">9. Paylaşım</h2>
+    <ul>
+      <li><strong>Paylaş</strong> düğmeleri sonucunun ya da en iyi tırmanışının resmini cihazında oluşturur (skor, kat,
+      kıyafet ve oyunun bağlantısı) ve telefonunun paylaşım penceresini açar. Paylaşıp paylaşmayacağını ve hangi
+      uygulamayla ya da kiminle paylaşacağını sen seçersin. Bize göndermediğin sürece paylaştığın hiçbir şey bize
+      ulaşmaz.</li>
+      <li>Haftada bir, tamamlanan bir paylaşım altın bonusu kazandırır. Uygulama yalnızca paylaşım penceresinin
+      tamamlanıp tamamlanmadığını öğrenir; nerede ya da kiminle paylaştığını öğrenmez.</li>
       <li>Bize e-posta gönderirsen e-posta adresini ve mesajını yalnızca sana cevap vermek için kullanırız.</li>
     </ul>
 
-    <h2 id="izinler">8. Cihaz izinleri</h2>
-    <p>Uygulama internet erişimi (reklamları yüklemek, oyun analizlerini ve çökme raporlarını göndermek ve Google Play ile iletişim için) ve titreşim (dokunsal geri
-    bildirim için; Ayarlar’dan kapatabilirsin) kullanır. Reklam SDK’sı, reklam kimliğini okumak ve Android’in reklam
-    gizliliği özelliklerini kullanmak için gereken izinleri ekler. Google Play, satın almalar için faturalandırma iznini
-    ekler. Uygulama konumuna, rehberine, fotoğraflarına, kamerana, mikrofonuna ya da dosyalarına erişim
-    <strong>istemez</strong>.</p>
+    <h2 id="izinler">10. Cihaz izinleri</h2>
+    <p>Uygulama internet erişimi (reklamları yüklemek, oyun analizlerini ve çökme raporlarını göndermek, satın almalar,
+    bildirimler ve saat kontrolü için, Android’de ayrıca mağaza ayarları için) ve titreşim (dokunsal geri bildirim için;
+    Ayarlar’dan kapatabilirsin) kullanır. iPhone’da ve Android 13 ve üstünde bildirim göstermek için izin ister;
+    Android’de telefon yeniden başladıktan sonra hatırlatmalarını yeniden planlayabilir. Reklam SDK’sı, reklam kimliğini
+    okumak ve Android’in reklam gizliliği özelliklerini kullanmak için gereken izinleri ekler. Google Play, satın almalar
+    için faturalandırma iznini ekler. Uygulama konumuna, rehberine, fotoğraflarına, kamerana, mikrofonuna ya da
+    dosyalarına erişim <strong>istemez</strong>.</p>
 
-    <h2 id="cocuklar">9. Çocuklar</h2>
+    <h2 id="cocuklar">11. Çocuklar</h2>
     <p>Zombie Jackpot 13 yaşından küçük çocuklara yönelik değildir ve çocuklardan bilerek kişisel bilgi toplamayız.
     Uygulama kimseden kişisel bilgi istemez. Reklam istekleri çocuklara yönelik olarak işaretlenmez ve reklam içeriği
     genel izleyici kitlesiyle (“PG”) sınırlıdır. Bir çocuğun bize kişisel bilgi verdiğini (ör. e-postayla)
     düşünüyorsan bize yaz; bu bilgiyi sileriz.</p>
 
-    <h2 id="silme">10. Saklama ve silme</h2>
+    <h2 id="silme">12. Saklama ve silme</h2>
     <ul>
       <li>Kendimize ait sunucumuz yok. Oyun analizleri Google Analytics’te 14 ay, çökme raporları Crashlytics’te 90 gün
       tutulur, sonra otomatik olarak silinir (2. bölüm).</li>
-      <li>Cihazındaki oyun verileri sen silene kadar kalır: Android Ayarlar → Uygulamalar → Zombie Jackpot → Depolama →
-      Depolama alanını temizle ya da uygulamayı kaldır. Google yedeğindeki kopya, Google hesabının ve cihazının yedekleme
-      ayarlarından yönetilir.</li>
+      <li>Cihazındaki oyun verileri sen silene kadar kalır: Android’de Ayarlar → Uygulamalar → Zombie Jackpot → Depolama →
+      Depolama alanını temizle ya da uygulamayı kaldır; iPhone’da uygulamayı sil. Google ya da iCloud yedeğindeki kopya,
+      hesabının ve yedekleme ayarlarının içinden yönetilir.</li>
+      <li>Satın alma kayıtlarını Apple ya da Google ve iPhone satın almaları için RevenueCat, satın almaları teslim edip
+      geri yüklemek ve muhasebe yükümlülükleri için gerektiği sürece saklar.</li>
+      <li>Bildirim jetonu, bildirimleri kapattığında ya da uygulamayı kaldırdığında silinir; Google kullanılmayan jetonları
+      ayrıca kendisi kaldırır.</li>
       <li>Google’ın reklamlar için topladığı veriler Google’ın politikalarına göre Google tarafından saklanır. Reklam
-      kimliğini Android ayarlarından istediğin zaman sıfırlayabilir ya da silebilirsin.</li>
+      kimliğini Android ayarlarından istediğin zaman sıfırlayabilir ya da silebilirsin; iPhone için 15. bölüme bak.</li>
       <li>Bize gönderdiğin e-postalar, sana yardım etmek için artık gerekmediğinde ya da istersen daha önce silinir.</li>
     </ul>
 
-    <h2 id="haklar">11. Hakların</h2>
+    <h2 id="haklar">13. Hakların</h2>
     <p>Yaşadığın yere göre (ör. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), AB/Birleşik Krallık GDPR ya da
     ABD eyalet gizlilik yasaları) kişisel verilerine erişme, düzeltme, silme, işlenmesine itiraz etme ya da sınırlama ve
-    iznini geri alma hakların olabilir. Hakkında kendi sunucularımızda kişisel veri saklamadığımız için bu taleplerin çoğu Google’ın işlediği
-    verilerle ilgilidir; bunları doğrudan Google’a (yukarıdaki bağlantılar) ve 4. bölümdeki reklam tercihleriyle
-    kullanabilirsin. Bize ulaşan analiz ve çökme verileri yalnızca rastgele bir uygulama örneği kimliğine bağlıdır; bu
-    yüzden hangisinin sana ait olduğunu bilemeyiz: durdurmak için Ayarlar → OYUN ANALİTİĞİ’ni kapat; uygulamayı
-    kaldırmak bu kimliği sıfırlar. Bize her zaman <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a> adresinden ulaşabilirsin;
-    ayrıca yetkili veri koruma kurumuna (Türkiye’de Kişisel Verileri Koruma Kurumu) şikâyette bulunabilirsin.</p>
+    iznini geri alma hakların olabilir. Hakkında kendi sunucularımızda kişisel veri saklamadığımız için bu taleplerin çoğu Google’ın,
+    Apple’ın ya da RevenueCat’in işlediği verilerle ilgilidir; bunları doğrudan onlara (yukarıdaki bağlantılar) ve 4.
+    bölümdeki reklam tercihleriyle kullanabilirsin. Bize ulaşan analiz ve çökme verileri yalnızca rastgele bir uygulama
+    örneği kimliğine bağlıdır; bu yüzden hangisinin sana ait olduğunu bilemeyiz: durdurmak için Ayarlar → OYUN
+    ANALİTİĞİ’ni kapat; uygulamayı kaldırmak bu kimliği sıfırlar. Bize her zaman
+    <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a> adresinden ulaşabilirsin; ayrıca yetkili veri koruma kurumuna
+    (Türkiye’de Kişisel Verileri Koruma Kurumu) şikâyette bulunabilirsin.</p>
 
-    <h2 id="guvenlik">12. Güvenlik ve yurt dışına aktarım</h2>
-    <p>Telefonundaki oyun verileri Android’in uygulama korumalı alanıyla (sandbox) korunur. Google SDK’larının gönderdiği
-    veriler (reklam, analiz ve çökme raporları) aktarım sırasında şifrelenir (TLS). Google verileri, gizlilik politikasında açıklanan uygun güvencelerle,
-    Amerika Birleşik Devletleri dahil bulunduğun ülke dışındaki ülkelerde işleyebilir.</p>
+    <h2 id="guvenlik">14. Güvenlik ve yurt dışına aktarım</h2>
+    <p>Telefonundaki oyun verileri sistemin uygulama korumalı alanıyla (sandbox) korunur. Uygulamadaki SDK’ların
+    gönderdiği veriler (reklam, analiz, çökme raporları, bildirimler ve satın almalar) aktarım sırasında şifrelenir
+    (TLS). Google ve RevenueCat verileri, gizlilik politikalarında açıklanan uygun güvencelerle, Amerika Birleşik
+    Devletleri dahil bulunduğun ülke dışındaki ülkelerde işleyebilir.</p>
 
-    <h2 id="ios">13. iPhone’da (iOS)</h2>
+    <h2 id="ios">15. iPhone’da (iOS)</h2>
     <p>iPhone sürümü aynı şekilde çalışır; farklar şunlardır:</p>
     <ul>
       <li><strong>Takip izni.</strong> Reklamlar başlamadan önce iOS, Apple’ın “Zombie Jackpot’un başka şirketlerin
@@ -248,16 +305,21 @@
       <li><strong>Analizler.</strong> Oyun analizleri ve çökme raporları 2. bölümdeki gibi çalışır. iPhone’da analizler
       reklam kimliğini (IDFA) ya da satıcı kimliğini (IDFV) hiçbir zaman kullanmaz; yukarıdaki takip sorusu yalnızca
       reklamlarla ilgilidir.</li>
+      <li><strong>Satın almalar.</strong> Uygulama içi satın almalar Apple’ın App Store’u üzerinden yapılır ve RevenueCat
+      ile kontrol edilir (5. bölüm); ödeme bilgilerini hiçbir zaman görmeyiz. Abonelikler iOS Ayarlar → [adın] →
+      Abonelikler bölümünden yönetilir.</li>
+      <li><strong>Uzaktan ayar yok.</strong> iPhone sürümü Firebase Remote Config kullanmaz: mağazası ve altın ödülleri
+      her oyuncu için aynıdır ve yalnızca bir uygulama güncellemesiyle değişir.</li>
+      <li><strong>Bildirimler.</strong> iOS, uygulamanın bildirim gönderip gönderemeyeceğini bir kez sorar; bunu iOS
+      Ayarlar → Bildirimler → Zombie Jackpot bölümünden ya da oyunun Ayarlar’ından değiştirebilirsin.</li>
       <li><strong>Depolama ve yedek.</strong> Oyun verileri iPhone’undaki uygulamaya özel alanda tutulur ve iOS ayarlarına
       göre iCloud ya da bilgisayar yedeğine dahil olabilir.</li>
-      <li><strong>Satın almalar.</strong> iPhone sürümünde şu an uygulama içi satın alma yoktur. Eklenirse tamamen Apple’ın
-      App Store’u tarafından yürütülür; ödeme bilgilerini hiçbir zaman görmeyiz.</li>
       <li><strong>Puanlama ve paylaşım.</strong> Puanlama penceresi Apple’ındır (uygulama verdiğin puanı öğrenmez);
       paylaşım iOS paylaşım ekranıyla yapılır.</li>
       <li><strong>Silme.</strong> Uygulamayı silmek, verilerini iPhone’undan kaldırır.</li>
     </ul>
 
-    <h2 id="degisiklik">14. Bu politikadaki değişiklikler ve iletişim</h2>
+    <h2 id="degisiklik">16. Bu politikadaki değişiklikler ve iletişim</h2>
     <p>Uygulamanın veri kullanımı değişirse, değişiklik yürürlüğe girmeden önce bu sayfayı ve yürürlük tarihini
     güncelleriz. İletişim: <strong>Burak Başoğul</strong> · <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a></p>
     <p class="note">Bu metin İngilizce sürümün (<a href="privacy.html" hreflang="en" lang="en">Privacy Policy</a>) Türkçe

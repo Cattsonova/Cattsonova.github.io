@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#1f0838">
 <title>Privacy Policy · Zombie Jackpot</title>
-<meta name="description" content="Privacy policy of the Zombie Jackpot mobile game: what stays on your device, gameplay analytics and crash reports (Firebase), how Google AdMob ads and Google Play purchases work, and your choices.">
+<meta name="description" content="Privacy policy of the Zombie Jackpot mobile game for iPhone and Android: what stays on your device, gameplay analytics and crash reports (Firebase), Google AdMob ads, optional notifications, purchases through the App Store (with RevenueCat) and Google Play, and your choices.">
 <link rel="icon" href="icon-512.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-512.png">
 <link rel="alternate" hreflang="tr" href="gizlilik.html">
@@ -21,11 +21,12 @@
 
   <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Zombie Jackpot (Android and iPhone) · Effective date: 12 October 2026</p>
+    <p class="meta">Zombie Jackpot (iPhone and Android) · Effective date: 23 October 2026</p>
 
-    <p>This policy explains what information the mobile game <strong>Zombie Jackpot</strong> (the “app”, package
-    <code>com.zombiejackpot.game</code>) uses, why, and the choices you have. The app is developed and published by
-    <strong>Burak Başoğul</strong> (“we”, “us”). Questions: <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>.</p>
+    <p>This policy explains what information the mobile game <strong>Zombie Jackpot</strong> (the “app”; on the App
+    Store “Zombie Jackpot: Tower Jump”; app ID <code>com.zombiejackpot.game</code> on iPhone and Android) uses, why, and
+    the choices you have. The app is developed and published by <strong>Burak Başoğul</strong> (“we”, “us”). Questions:
+    <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>.</p>
 
     <section class="glance" aria-labelledby="glance">
       <h2 id="glance">At a glance</h2>
@@ -33,8 +34,9 @@
         <li><strong>No account, no sign-up.</strong> We never ask for your name, email address or phone number.</li>
         <li><strong>Your game is saved on your device.</strong> Progress, coins, items and settings stay on your phone; we have no servers of our own.</li>
         <li><strong>Gameplay analytics and crash reports</strong> (Google Analytics for Firebase, Firebase Crashlytics) tell us how the game is played and when it breaks: game events with a random app ID, never your name, email or advertising ID. Where the law requires it, only with your consent; you can turn it off in Settings → GAMEPLAY ANALYTICS.</li>
-        <li><strong>Ads are provided by Google AdMob</strong>, which uses your device’s advertising ID and similar data. Where the law requires it, you are asked for consent first, and you can change your choice at any time.</li>
-        <li><strong>Purchases are handled by Google Play.</strong> We never see your payment details.</li>
+        <li><strong>Ads are provided by Google AdMob</strong>, which uses your device’s advertising ID and similar data. Where the law requires it, you are asked for consent first (and on iPhone, Apple’s tracking prompt decides whether the advertising ID may be used), and you can change your choice at any time.</li>
+        <li><strong>Optional in-app purchases</strong> are handled by Apple (App Store) on iPhone, where RevenueCat checks the purchase status for us, and by Google Play on Android. We never see your payment details.</li>
+        <li><strong>Notifications are optional.</strong> Reminders are planned on your phone; announcements use Firebase Cloud Messaging. You can turn them off in Settings → NOTIFICATIONS.</li>
         <li><strong>We do not sell your data</strong>, and analytics are never used for advertising or to track you across other apps.</li>
       </ul>
     </section>
@@ -45,7 +47,9 @@
         <li><a href="#analytics">Gameplay analytics and crash reports (Firebase)</a></li>
         <li><a href="#ads">Advertising (Google AdMob)</a></li>
         <li><a href="#consent">Consent and your ad choices</a></li>
-        <li><a href="#purchases">In-app purchases (Google Play)</a></li>
+        <li><a href="#purchases">In-app purchases (App Store, Google Play)</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#connections">Shop settings and time check</a></li>
         <li><a href="#reviews">Ratings and reviews</a></li>
         <li><a href="#sharing">Sharing</a></li>
         <li><a href="#permissions">Device permissions</a></li>
@@ -59,23 +63,23 @@
     </nav>
 
     <h2 id="device">1. Data stored on your device</h2>
-    <p>To save your game, the app keeps the following on your phone, in the app’s private storage (the app’s web
-    storage and Android’s app preferences):</p>
+    <p>To save your game, the app keeps the following on your phone, in the app’s private storage (the app’s
+    preferences and files):</p>
     <ul>
-      <li>progress: best score and floor, coin balance, unlocked and equipped outfits, achievements, daily and episode progress;</li>
-      <li>settings: language, control mode, announcer voice and vibration on/off;</li>
+      <li>progress: best score and floor, coin balance, unlocked and equipped outfits and items, achievements, daily and episode progress;</li>
+      <li>settings: language, music and sound effects, control mode and left-handed controls, announcer voice, vibration and notifications on/off;</li>
       <li>local play statistics used to balance the game (for example number of runs, floors reached, run length and what ended a run);</li>
-      <li>bookkeeping for ads, reviews and sharing (for example when the last ad was shown, when a review was last requested, the day of the last share bonus);</li>
-      <li>which in-app purchases you own, so that they keep working;</li>
+      <li>bookkeeping for ads, reviews, sharing and notifications (for example when the last ad was shown, when a review was last requested, when the last weekly share bonus was paid, which reminders are planned);</li>
+      <li>which in-app purchases you own and whether a VIP Club subscription is active, so that they keep working;</li>
       <li>a performance log (how smoothly the game ran: frame times, the game screen and floor at the time, and basic
-      device details such as the phone model, Android/iOS version, graphics chip and screen size), kept only for the
-      current and the previous session.</li>
+      device details such as the phone model, Android/iOS version and screen size), kept only for the current and the
+      previous session.</li>
     </ul>
     <p>The app does <strong>not send this saved data</strong> to us or to anyone else. (Separately, gameplay analytics and
-    crash reports are sent as described in section 2.) If backup is turned on in your
-    Android settings, Android’s automatic backup may include the app’s data in your device backup in your Google
-    account, so that your progress can be restored after a reinstall or on a new phone. That backup is stored and
-    managed by Google under your Google account settings.</p>
+    crash reports are sent as described in section 2, and purchases are checked as described in section 5.) If backup is
+    turned on in your Android settings, Android’s automatic backup may include the app’s data in your device backup in
+    your Google account, so that your progress can be restored after a reinstall or on a new phone. That backup is stored
+    and managed by Google under your Google account settings. On iPhone, see section 15.</p>
 
     <h2 id="analytics">2. Gameplay analytics and crash reports (Firebase)</h2>
     <p>To see how the game is played and to fix problems, the app uses <strong>Google Analytics for Firebase</strong> and
@@ -118,13 +122,15 @@
     <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
 
     <h2 id="ads">3. Advertising (Google AdMob)</h2>
-    <p>The app is free and is funded by ads served by <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited):
-    optional rewarded videos that you choose to watch for an in-game reward (for example a second chance or double coins),
-    and occasional full-screen ads between games.</p>
+    <p>The app is free to play and is funded by ads served by <strong>Google AdMob</strong> (Google LLC / Google Ireland
+    Limited) and by optional purchases: optional rewarded videos that you choose to watch for an in-game reward (for
+    example a second chance or double coins), and occasional full-screen ads between games, never during a run. The
+    Remove Ads purchase and a VIP Club subscription turn off the ads between games; the rewarded videos stay optional.</p>
     <p>When ads are requested and shown, the Google Mobile Ads SDK inside the app may automatically collect and share with
     Google:</p>
     <ul>
-      <li><strong>device identifiers</strong>: the Android advertising ID and the app set ID;</li>
+      <li><strong>device identifiers</strong>: on Android the advertising ID and the app set ID; on iPhone the identifier
+      for vendors (IDFV) and, only if you allow tracking, the advertising identifier (IDFA, see section 15);</li>
       <li>your <strong>IP address</strong>, from which an approximate location (such as the country or city) can be estimated;</li>
       <li><strong>interactions</strong> such as app launches, ad views, taps and video views;</li>
       <li><strong>diagnostic and performance information</strong> about the app and the ads SDK;</li>
@@ -152,84 +158,134 @@
       <li>You can change or withdraw your choice at any time: in the game, open <strong>Settings → PRIVACY OPTIONS</strong>
       (shown where the consent form applies). If you withdraw consent, the app stops requesting ads that rely on it, and
       Google Analytics stops storing analytics identifiers (section 2).</li>
+      <li>On iPhone, Apple’s tracking prompt also applies (section 15).</li>
       <li>In your Android settings (Settings → Google → Ads, or Settings → Privacy → Ads on some phones) you can reset or
       delete your advertising ID and opt out of personalized ads for all apps.</li>
     </ul>
 
-    <h2 id="purchases">5. In-app purchases (Google Play)</h2>
-    <p>The app may offer optional in-app purchases (for example removing the between-game ads, outfits or coin packs).
-    Payments are processed entirely by <strong>Google Play</strong>; we never receive your card or other payment details.
-    Google Play tells the app what you bought (product, purchase status and a purchase token) so that the app can deliver
-    and restore your purchase; this check happens on your device and the result is stored on your device only. In Google
-    Play Console Google also gives us limited order information (for example order number, product, date, price and
-    country) for accounting, refunds and support. See the <a href="https://policies.google.com/privacy" rel="noopener">Google
-    Privacy Policy</a> and the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google
-    Payments Privacy Notice</a>.</p>
-
-    <h2 id="reviews">6. Ratings and reviews</h2>
-    <p>Now and then, after a good moment in the game, the app may ask Google Play to show its rating window (Google Play
-    In-App Review). This window is run entirely by Google Play. The app does not learn whether you rated the game or what
-    you wrote. Reviews you post are public on Google Play under your Google account, under Google’s terms.</p>
-
-    <h2 id="sharing">7. Sharing</h2>
+    <h2 id="purchases">5. In-app purchases (App Store, Google Play)</h2>
+    <p>The app offers optional in-app purchases: coin packs, premium looks, the Starter Pack (an exclusive look and
+    coins), Remove Ads (no more ads between games) and <strong>VIP Club</strong>, a monthly subscription that renews
+    automatically until you cancel it. Every product has fixed contents; nothing random is sold. We never receive your
+    card or other payment details.</p>
     <ul>
-      <li>The <strong>Share</strong> button creates a picture of your result on your device (score, floor, outfit and a link
-      to the game) and opens Android’s share window. You choose whether to share it and with which app or person. We do not
-      receive anything you share unless you send it to us.</li>
-      <li>In <strong>Settings → SHARE STATS</strong> you can copy or share your play statistics (game statistics plus basic technical
-      details: app version, platform, screen size, language and a shortened browser engine version). Nothing is sent
-      unless you choose to share it. If you send it to us, we use it only to improve the game’s balance and delete it when
-      it is no longer needed.</li>
-      <li>In <strong>Settings → PERFORMANCE REPORT</strong> you can share a technical report of how smoothly the game ran on
-      your device (frame times, the game screen and floor at the time, your settings, and device details: app version, the
-      phone model and Android/iOS version as reported by the system web view, graphics chip, screen size, processor core
-      count, memory class and language). It contains no name, account, advertising ID, location or contacts. Nothing is
-      sent unless you choose to share it. If you send it to us, we use it only to fix performance problems and delete it
-      when it is no longer needed.</li>
+      <li><strong>On iPhone</strong>, payments are processed by <strong>Apple</strong> through the App Store and charged
+      to your Apple Account. To find out what you bought and whether VIP Club is active, and to restore your purchases,
+      the app uses <strong>RevenueCat</strong> (RevenueCat, Inc., USA), a service that acts on our behalf. RevenueCat
+      receives an anonymous ID that its SDK creates on your device (not your name, email address or Apple Account), the
+      App Store transaction details (product, purchase, renewal and expiry dates, price and currency, storefront country
+      and transaction IDs) and basic technical details (app version, iOS version and language); like any server the app
+      connects to, it sees your IP address. We see these purchase records in RevenueCat’s dashboard and use them only to
+      deliver and restore purchases, to handle refunds and support, and for accounting. Apple also gives us sales
+      reports in App Store Connect. You can manage or cancel VIP Club in iOS Settings → [your name] → Subscriptions.
+      See the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a> and the
+      <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+      <li><strong>On Android</strong>, payments are processed entirely by <strong>Google Play</strong>. Google Play tells
+      the app what you bought (product, purchase status and a purchase token) so that the app can deliver and restore
+      your purchase; this check happens on your device and the result is stored on your device only. In Google Play
+      Console Google also gives us limited order information (for example order number, product, date, price and
+      country) for accounting, refunds and support. You can manage or cancel VIP Club in Google Play → Payments &amp;
+      subscriptions → Subscriptions. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy
+      Policy</a> and the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google
+      Payments Privacy Notice</a>.</li>
+    </ul>
+
+    <h2 id="notifications">6. Notifications</h2>
+    <p>The game can show two kinds of notifications. You can turn them off at any time in <strong>Settings →
+    NOTIFICATIONS</strong> or in your phone’s settings.</p>
+    <ul>
+      <li><strong>Reminders</strong> are planned on your phone by the app itself (for example a few days after you last
+      played, never at night). Nothing is sent to a server to plan them.</li>
+      <li><strong>Announcements</strong> about the game are sent by us from the Firebase console through <strong>Firebase
+      Cloud Messaging</strong> (Google), on iPhone together with Apple Push Notification service. While notifications are
+      on, the app receives a registration token for this installation and joins a topic that all players share; Google
+      (and on iPhone, Apple) uses the token only to deliver the messages. We do not see who received a message, only
+      totals such as how many were sent and opened. Turning notifications off deletes the token.</li>
+      <li>On iPhone and on Android 13 and newer, notifications start only after you agree in the game and allow them in
+      the system dialog. On Android 12 and older, where the system does not ask, they are on from the first launch until
+      you turn them off.</li>
+    </ul>
+
+    <h2 id="connections">7. Shop settings and time check</h2>
+    <ul>
+      <li><strong>Shop and coin settings (Android only).</strong> The Android version uses <strong>Firebase Remote
+      Config</strong> (Google) to download a few settings that we set in the Firebase console: whether a launch offer is
+      shown in the shop, which product it is and when it ends, and the coin rewards of runs. To fetch them, the app sends
+      the Firebase installation ID and basic app and device details (such as the app version, language and country) to
+      Google. These settings only switch or tune the offer and the coin rewards; they never download code or new
+      content. <strong>The iPhone version does not use Remote Config.</strong></li>
+      <li><strong>Time check for the weekly share bonus.</strong> So that the weekly share bonus (section 9) cannot be
+      claimed by changing the phone’s clock, the app reads the current date from Google’s servers: an empty HTTPS request
+      to <code>www.google.com/generate_204</code> (or <code>www.gstatic.com/generate_204</code>) whose answer carries the
+      time. It sends no game data, ID or personal data; like any server, Google sees your IP address. The app makes this
+      request a few times while it is open (for example when it starts and before a share bonus is paid) and keeps the
+      result only in memory.</li>
+    </ul>
+
+    <h2 id="reviews">8. Ratings and reviews</h2>
+    <p>Now and then, after a good moment in the game, the app may ask the store to show its rating window (Apple’s rating
+    prompt on iPhone, Google Play In-App Review on Android). This window is run entirely by Apple or Google. The app does
+    not learn whether you rated the game or what you wrote. Reviews you post are public in the store under your account,
+    under the store’s terms.</p>
+
+    <h2 id="sharing">9. Sharing</h2>
+    <ul>
+      <li>The <strong>Share</strong> buttons create a picture of your result or your best climb on your device (score,
+      floor, outfit and a link to the game) and open your phone’s share window. You choose whether to share it and with
+      which app or person. We do not receive anything you share unless you send it to us.</li>
+      <li>Once a week, a share that goes through earns a coin bonus. The app only learns whether the share window was
+      completed, not where or with whom you shared.</li>
       <li>If you email us, we use your email address and message only to reply to you.</li>
     </ul>
 
-    <h2 id="permissions">8. Device permissions</h2>
-    <p>The app uses internet access (to load ads, to send gameplay analytics and crash reports, and to talk to Google Play) and vibration (for haptic feedback, which you
-    can turn off in Settings). The ads SDK adds the permissions it needs to read the advertising ID and use Android’s ads
-    privacy features. Google Play adds the billing permission for purchases. The app does <strong>not</strong> ask for
-    access to your location, contacts, photos, camera, microphone or files.</p>
+    <h2 id="permissions">10. Device permissions</h2>
+    <p>The app uses internet access (to load ads, to send gameplay analytics and crash reports, for purchases,
+    notifications and the time check, and on Android for the shop settings) and vibration (for haptic feedback, which you
+    can turn off in Settings). On iPhone and on Android 13 and newer it asks for permission to show notifications; on
+    Android it may also re-plan its reminders after the phone restarts. The ads SDK adds the permissions it needs to read
+    the advertising ID and use Android’s ads privacy features. Google Play adds the billing permission for purchases. The
+    app does <strong>not</strong> ask for access to your location, contacts, photos, camera, microphone or files.</p>
 
-    <h2 id="children">9. Children</h2>
+    <h2 id="children">11. Children</h2>
     <p>Zombie Jackpot is not directed to children under 13, and we do not knowingly collect personal information from
     children. The app does not ask for any personal information from anyone. Ad requests are not tagged as directed to
     children, and ad content is limited to a general audience (“PG”). If you believe a child has provided personal
     information to us (for example by email), contact us and we will delete it.</p>
 
-    <h2 id="retention">10. Keeping and deleting data</h2>
+    <h2 id="retention">12. Keeping and deleting data</h2>
     <ul>
       <li>We have no servers of our own. Gameplay analytics are kept in Google Analytics for 14 months and crash reports in
       Crashlytics for 90 days, then deleted automatically (section 2).</li>
-      <li>The game data on your device stays until you delete it: Android Settings → Apps → Zombie Jackpot → Storage →
-      Clear storage, or uninstall the app. A copy in your Google backup is managed in your Google account and device
-      backup settings.</li>
+      <li>The game data on your device stays until you delete it: on Android, Settings → Apps → Zombie Jackpot → Storage →
+      Clear storage, or uninstall the app; on iPhone, delete the app. A copy in your Google or iCloud backup is managed in
+      your account and backup settings.</li>
+      <li>Purchase records are kept by Apple or Google and, for iPhone purchases, by RevenueCat for as long as they are
+      needed to deliver and restore purchases and for accounting obligations.</li>
+      <li>A notification token is deleted when you turn notifications off or uninstall the app; Google also removes tokens
+      that are no longer used.</li>
       <li>Data collected by Google for ads is kept by Google according to its policies. You can reset or delete your
-      advertising ID at any time in your Android settings.</li>
+      advertising ID at any time in your Android settings; on iPhone, see section 15.</li>
       <li>Emails you send us are deleted when they are no longer needed to help you, or earlier on request.</li>
     </ul>
 
-    <h2 id="rights">11. Your rights</h2>
+    <h2 id="rights">13. Your rights</h2>
     <p>Depending on where you live (for example under the EU/UK GDPR, the Turkish Personal Data Protection Law No. 6698
     (KVKK) or US state privacy laws) you may have the right to access, correct or delete your personal data, to object to
     or restrict its use, and to withdraw consent. Because we do not keep personal data about you on servers of our own, most of these requests
-    concern data processed by Google; you can exercise them with Google directly (see the links above) and through the
-    ad choices described in section 4. The analytics and crash data that reach us are linked only to a random app-instance
-    ID, so we cannot tell which of it is yours: to stop it, switch off Settings → GAMEPLAY ANALYTICS; uninstalling the app
-    resets that ID. You are always welcome to contact us at
+    concern data processed by Google, Apple or RevenueCat; you can exercise them with them directly (see the links above) and
+    through the ad choices described in section 4. The analytics and crash data that reach us are linked only to a random
+    app-instance ID, so we cannot tell which of it is yours: to stop it, switch off Settings → GAMEPLAY ANALYTICS;
+    uninstalling the app resets that ID. You are always welcome to contact us at
     <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a>, and you may lodge a complaint with your local data protection
     authority.</p>
 
-    <h2 id="security">12. Security and international transfers</h2>
-    <p>Game data on your phone is protected by Android’s app sandbox. Data sent by the Google SDKs (ads, analytics and crash reports) is encrypted in transit
-    (TLS). Google may process data in countries other than yours, including the United States, under appropriate
-    safeguards described in its privacy policy.</p>
+    <h2 id="security">14. Security and international transfers</h2>
+    <p>Game data on your phone is protected by the system’s app sandbox. Data sent by the SDKs in the app (ads, analytics,
+    crash reports, notifications and purchases) is encrypted in transit (TLS). Google and RevenueCat may process data in
+    countries other than yours, including the United States, under appropriate safeguards described in their privacy
+    policies.</p>
 
-    <h2 id="ios">13. On iPhone (iOS)</h2>
+    <h2 id="ios">15. On iPhone (iOS)</h2>
     <p>The iPhone version works the same way, with these differences:</p>
     <ul>
       <li><strong>Tracking permission.</strong> Before ads start, iOS may show Apple’s “Allow Zombie Jackpot to track your
@@ -241,16 +297,21 @@
       <li><strong>Analytics.</strong> Gameplay analytics and crash reports work as in section 2. On iPhone, analytics never
       uses the advertising identifier (IDFA) or the identifier for vendors (IDFV), and the tracking prompt above is only
       about ads.</li>
+      <li><strong>Purchases.</strong> In-app purchases are made through Apple’s App Store and checked through RevenueCat
+      (section 5); we never see your payment details. Subscriptions are managed in iOS Settings → [your name] →
+      Subscriptions.</li>
+      <li><strong>No remote settings.</strong> The iPhone version does not use Firebase Remote Config: its shop and
+      coin rewards are the same for every player and are only changed by an app update.</li>
+      <li><strong>Notifications.</strong> iOS asks once whether the app may send notifications; you can change this in iOS
+      Settings → Notifications → Zombie Jackpot or in the game’s Settings.</li>
       <li><strong>Storage and backup.</strong> Game data is kept in the app’s private storage on your iPhone and may be
       included in your iCloud or computer backup, depending on your iOS settings.</li>
-      <li><strong>Purchases.</strong> In-app purchases are not offered in the iPhone version yet. If they are added, they
-      will be handled entirely by Apple’s App Store; we will never see your payment details.</li>
       <li><strong>Ratings and sharing.</strong> The rating window is Apple’s (the app does not learn your rating), and
       sharing uses the iOS share sheet.</li>
       <li><strong>Deleting.</strong> Deleting the app removes its data from your iPhone.</li>
     </ul>
 
-    <h2 id="changes">14. Changes to this policy and contact</h2>
+    <h2 id="changes">16. Changes to this policy and contact</h2>
     <p>If the app’s use of data changes, we will update this page and its effective date before the change takes effect.
     Contact: <strong>Burak Başoğul</strong> · <a href="mailto:bb6516801@gmail.com">bb6516801@gmail.com</a></p>
   </main>

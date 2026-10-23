@@ -212,6 +212,30 @@ button:focus-visible {
   letter-spacing: 0.02em;
   color: var(--gold);
 }
+/* The store links: the same gold badge as .soon, side by side (they wrap on a narrow phone). */
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 26px 0 6px;
+}
+.stores .soon {
+  margin: 0;
+  width: 230px;
+  max-width: 100%;
+  text-decoration: none;
+}
+.stores a.soon:hover strong {
+  color: #fff2a8;
+}
+/* A store the game is not in yet: the same badge without a link, its longer first line a little tighter. */
+.stores .later small {
+  letter-spacing: 0.06em;
+}
+.hero .note {
+  margin: 10px 0 0;
+}
 .banner {
   display: block;
   width: 100%;
