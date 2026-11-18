@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1f0838">
+<title>Zombie Jackpot · İndir / Download</title>
+<meta name="description" content="Zombie Jackpot'u ücretsiz indir: iPhone için App Store, Android için Google Play. Download Zombie Jackpot free for iPhone and Android.">
+<meta property="og:title" content="Zombie Jackpot · Ücretsiz indir">
+<meta property="og:description" content="Neon kulede tırman, zombi sürüsünden kaç, VS modunda gerçek oyuncularla yarış. iPhone ve Android.">
+<meta property="og:image" content="https://cattsonova.github.io/feature-graphic.png">
+<meta property="og:url" content="https://cattsonova.github.io/indir/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="stylesheet" href="../style.css">
+<script>
+// One link for every bio: an iPhone/iPad goes to the App Store, an Android phone to Google Play, anything else sees
+// both buttons. ?k=instagram (or tiktok, youtube...) is passed to Google Play as the install referrer (utm_source).
+(function () {
+  var ua = navigator.userAgent || '';
+  var k = (new URLSearchParams(location.search).get('k') || 'site').replace(/[^a-z0-9_-]/gi, '').slice(0, 30) || 'site';
+  var play = 'https://play.google.com/store/apps/details?id=com.zombiejackpot.game&referrer=' +
+    encodeURIComponent('utm_source=' + k + '&utm_medium=bio&utm_campaign=indir');
+  var ios = 'https://apps.apple.com/app/id6822886805';
+  var iPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  window.ZJ_LINKS = { play: play, ios: ios };
+  if (/iPhone|iPad|iPod/.test(ua) || iPadOS) location.replace(ios);
+  else if (/Android/i.test(ua)) location.replace(play);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <main>
+    <section class="hero">
+      <img class="icon" src="../icon-512.png" alt="Zombie Jackpot" width="144" height="144">
+      <h1 class="logo"><span class="z">Zombie</span><span class="j">Jackpot</span></h1>
+      <p class="tagline">Ücretsiz indir · Download free</p>
+      <div class="stores">
+        <a class="soon" id="ios" href="https://apps.apple.com/app/id6822886805"><small>iPhone</small><strong>App Store</strong></a>
+        <a class="soon" id="play" href="https://play.google.com/store/apps/details?id=com.zombiejackpot.game"><small>Android</small><strong>Google Play</strong></a>
+      </div>
+      <p class="note"><a href="../">cattsonova.github.io</a></p>
+    </section>
+  </main>
+</div>
+<script>
+if (window.ZJ_LINKS) { document.getElementById('play').href = window.ZJ_LINKS.play; }
+</script>
+</body>
+</html>
