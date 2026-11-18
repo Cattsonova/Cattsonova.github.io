@@ -21,7 +21,7 @@
 
   <main class="doc">
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Zombie Jackpot (iPhone ve Android) · Yürürlük tarihi: 29 Ekim 2026</p>
+    <p class="meta">Zombie Jackpot (iPhone ve Android) · Yürürlük tarihi: 18 Kasım 2026</p>
 
     <p>Bu politika, <strong>Zombie Jackpot</strong> mobil oyununun (“uygulama”; App Store’daki adı “Zombie Jackpot: Kule
     Zıplama”; iPhone’da ve Android’de uygulama kimliği <code>com.zombiejackpot.game</code>) hangi bilgileri neden
@@ -75,10 +75,15 @@
       <li>çalışmaya devam etmeleri için sahip olduğun uygulama içi satın almalar ve VIP Kulüp aboneliğinin etkin olup olmadığı;</li>
       <li>oyunun ne kadar akıcı çalıştığını gösteren bir performans kaydı (kare süreleri, o anki oyun ekranı ve kat,
       telefon modeli, Android/iOS sürümü ve ekran boyutu gibi temel cihaz bilgileri); yalnızca şu anki ve bir önceki
-      oturum için tutulur.</li>
+      oturum için tutulur;</li>
+      <li>çevrimiçi oynarsan (16. bölüm): bu kurulum için bir kez oluşturulan rastgele bir misafir kimliği ve rastgele bir
+      cihaz işareti, oyuncu adın, DERECELİ ekranının gösterdiği son DERECELİ maçların ve derecen, rakip adlarının gizlenip
+      gizlenmediği. Oyun sunucumuzun sana verdiği giriş jetonu telefonun güvenli deposunda (iOS Anahtar Zinciri ya da
+      Android Keystore) tutulur.</li>
     </ul>
-    <p>Uygulama bu kayıtlı verileri <strong>bize ya da başka birine göndermez</strong>. (Bundan ayrı olarak oyun
-    analizleri ve çökme raporları 2. bölümde, satın alma kontrolleri 5. bölümde anlatıldığı gibi gönderilir.) Android
+    <p>Uygulama bu kayıtlı verileri, bulut yedeğini açmadıkça (17. bölüm) <strong>bize ya da başka birine
+    göndermez</strong>. (Bundan ayrı olarak oyun analizleri ve çökme raporları 2. bölümde, satın alma kontrolleri 5.
+    bölümde anlatıldığı gibi gönderilir; çevrimiçi oyun da 16. bölümde anlatıldığı gibi oyun sunucumuzla konuşur.) Android
     ayarlarında yedekleme açıksa, Android’in otomatik yedeklemesi uygulama verilerini Google hesabındaki cihaz yedeğine
     ekleyebilir; böylece uygulamayı yeniden kurduğunda ya da yeni telefonda ilerlemen geri gelebilir. Bu yedek, Google
     hesabının ayarlarına göre Google tarafından saklanır ve yönetilir. iPhone için 15. bölüme bak.</p>
@@ -248,7 +253,7 @@
 
     <h2 id="izinler">10. Cihaz izinleri</h2>
     <p>Uygulama internet erişimi (reklamları yüklemek, oyun analizlerini ve çökme raporlarını göndermek, satın almalar,
-    bildirimler ve saat kontrolü için, Android’de ayrıca mağaza ayarları için) ve titreşim (dokunsal geri bildirim için;
+    bildirimler ve saat kontrolü için, çevrimiçi oyun ve bulut yedeği için, Android’de ayrıca mağaza ayarları için) ve titreşim (dokunsal geri bildirim için;
     Ayarlar’dan kapatabilirsin) kullanır. iPhone’da ve Android 13 ve üstünde bildirim göstermek için izin ister;
     Android’de telefon yeniden başladıktan sonra hatırlatmalarını yeniden planlayabilir. Reklam SDK’sı, reklam kimliğini
     okumak ve Android’in reklam gizliliği özelliklerini kullanmak için gereken izinleri ekler. Google Play, satın almalar
@@ -320,29 +325,56 @@
       göre iCloud ya da bilgisayar yedeğine dahil olabilir.</li>
       <li><strong>Puanlama ve paylaşım.</strong> Puanlama penceresi Apple’ındır (uygulama verdiğin puanı öğrenmez);
       paylaşım iOS paylaşım ekranıyla yapılır.</li>
-      <li><strong>Silme.</strong> Uygulamayı silmek, verilerini iPhone’undan kaldırır.</li>
+      <li><strong>Game Center.</strong> iPhone’da DERECELİ, <strong>Game Center</strong> (Apple) girişini kullanır.
+      Uygulama bunu yalnızca ONLINE’da sen seçtiğinde ister, açılışta asla. Oyun sunucumuza yalnızca bu oyun için Game
+      Center oyuncu kimliğini (team player ID) ve bunu kanıtlayan Apple imzasını gönderir; sunucu imzayı Apple’ın açık
+      sertifikasıyla doğrular ve kimliğin yalnızca tek yönlü bir kodunu saklar (16. bölüm). Game Center takma adın,
+      arkadaşların, e-posta adresin ya da rehberin bize gelmez. Game Center olmadan da misafir olarak çevrimiçi
+      oynayabilirsin (arkadaşlarla maç ve antrenman).</li>
+      <li><strong>Bilgisayar kontrollü rakipler.</strong> iPhone’da sunucumuzun yönettiği bir rakip her zaman
+      <strong>BOT</strong> olarak işaretlenir (16. bölüm).</li>
+      <li><strong>Silme.</strong> Uygulamayı silmek, verilerini iPhone’undan kaldırır. Sunucumuzdaki çevrimiçi hesabını ve
+      bulut yedeğini silmez: önce onları oyunun içinden sil (16. bölüm).</li>
     </ul>
 
     <h2 id="cevrimici">16. Çevrimiçi oyun ve oyun hesapları</h2>
     <p>Çevrimiçi oyun (arkadaşlarla canlı maç, DERECELİ ve antrenman) isteğe bağlıdır. Çevrimiçi oynamak için oyun
     sunucumuzda bir oyun hesabı açarsın: misafir hesap ya da <strong>Game Center</strong> (iPhone) veya <strong>Google
-    Play Games</strong> (Android) girişin. Tek oyunculu ilerlemen ve satın almaların bunun parçası değildir; yalnızca bulut yedeğini açarsan bir kopyası saklanır (17. bölüm).</p>
+    Play Games</strong> (Android) girişin. DERECELİ için Game Center ya da Play Games girişi gerekir; misafir olarak
+    arkadaşlarla maç ve antrenman oynayabilirsin. Tek oyunculu ilerlemen ve satın almaların bunun parçası değildir; yalnızca bulut yedeğini açarsan bir kopyası saklanır (17. bölüm).</p>
     <ul>
-      <li><strong>Saklananlar:</strong> bir hesap kimliği, giriş yaptığın Game Center ya da Play Games oyuncu kimliği,
-      seçtiğin oyuncu adı, DERECELİ puanın ve maç geçmişin, maçlarının tekrarları (girişlerin ve zamanlamaları),
-      engellediğin oyuncular, gönderdiğin şikâyet ve itirazlar. Kötüye kullanımı sınırlamak için sunucu 14 günde bir
+      <li><strong>Saklananlar:</strong> bir hesap kimliği; giriş yaptığın Game Center ya da Play Games oyuncu kimliği,
+      yalnızca tek yönlü bir kod (HMAC) olarak, kimliğin kendisi asla (Google’ın giriş jetonları saklanmaz); seçtiğin
+      oyuncu adı (eski adların 180 gün) ve maçlarda giydiğin görünüm; kabul ettiğin Kullanım Koşulları sürümü; DERECELİ
+      puanın, derecen ve maç geçmişin; maçlarının tekrarları (girişlerin ve zamanlamaları); engellediğin oyuncular;
+      gönderdiğin şikâyet ve itirazlar. Sunucu her maçta ayrıca uygulama sürümünü, telefon modelini, kontrol modunu ve
+      ekran boyutu sınıfını ve cihaz işaretinin (1. bölüm) tek yönlü bir kodunu not eder. Sunucu kendi giriş jetonlarını
+      yalnızca tek yönlü kod olarak saklar. Aktarım kodu (hesabını başka telefona taşımak için) bir kez ve 10 dakika
+      geçerlidir ve o da yalnızca tek yönlü kod olarak saklanır. Kötüye kullanımı sınırlamak için sunucu 14 günde bir
       değişen kodlanmış bir ağ işareti tutar; IP adresini saklamaz.</li>
       <li><strong>Neden:</strong> çevrimiçi maçları ve eşleştirmeyi yürütmek, adları ve sıralamaları diğer oyunculara
       göstermek, hileyi ve kötüye kullanımı önlemek (istediğin hizmeti sunmak ve adil oyundaki meşru menfaatimiz).
+      Oyuncu adları bir kelime süzgecinden geçer; birkaç oyuncunun şikâyet ettiği bir ad, bir kişi bakana kadar gizlenir.
       Otomatik kontroller olağandışı maçları işaretler; yaptırıma bir kişi karar verir ve oyun içinden itiraz edebilirsin.</li>
-      <li><strong>Kim görür:</strong> diğer oyuncular oyuncu adını, derecelini ve maç sonuçlarını görür. Veriler,
+      <li><strong>Kim görür:</strong> diğer oyuncular oyuncu adını, görünümünü, dereceni ve maç sonuçlarını görür
+      (maçlarda, maç geçmişinde ve sıralamalarda); rakiplerin adlarını kendi telefonunda gizleyebilirsin. Veriler,
       Amerika Birleşik Devletleri’nde Google Cloud üzerindeki sunucumuzda saklanır; Google bunları bizim adımıza işler
       (yurt dışına aktarım). Satılmaz, reklam için kullanılmaz, başka kimseyle paylaşılmaz.</li>
+      <li><strong>Bilgisayar kontrollü rakipler:</strong> antrenman her zaman sunucumuzun yönettiği bir oyuncuya karşıdır;
+      uygun bir kişi boşta değilken DERECELİ de seni böyle bir oyuncuyla eşleştirebilir. iPhone’da böyle bir oyuncu
+      <strong>BOT</strong> olarak işaretlenir. Bunlar insan değil, programdır: onlar aracılığıyla hakkında hiçbir şey
+      kimseye iletilmez. Böyle bir rakiple oynanan DERECELİ maç diğer maçlar gibi saklanır ve puanı etkiler; sıralamalarda
+      da görünebilirler.</li>
+      <li><strong>Ne kadar süre:</strong> maç tekrarları 30 gün, otomatik bir kontrolün işaretlediği maçlarda 90 gün,
+      inceleme sürerken de inceleme kapandıktan 180 gün sonrasına kadar saklanır; şikâyetler ve otomatik kontrollerin
+      sonuçları 90 gün ya da onları kullanan inceleme kapandıktan 180 gün sonrasına kadar; denetim kaydı ve puan defteri 2
+      yıl; sunucu günlükleri 14 gün. Geri kalan her şey hesabın var olduğu sürece saklanır.</li>
       <li><strong>Silme:</strong> oyunda ONLINE → HESAP → HESABI SİL, Ayarlar → HESABIMI VE SUNUCUDAKİ VERİLERİMİ SİL ya da e-postayla
       (<a href="hesap-silme.html">çevrimiçi hesabını silme</a>). Oturumların hemen kapanır; verilerin 24 saat içinde,
       yedeklerden 7 gün içinde silinir. Bazı kayıtlar kimliğin yerine geri döndürülemez bir kodla saklanır: yaptırımlar,
       açık inceleme dosyaları (kapanıştan sonra 180 gün), denetim kaydı ve puan defteri (2 yıl), sunucu günlükleri (14
-      gün). Kimsenin girmediği hesap kendiliğinden silinir: misafir hesap 180 gün, Game Center ya da Play Games hesabı 24
+      gün). Kullandığın Game Center ya da Play Games hesabıyla 30 gün sonra yeni bir oyun hesabı açılabilir. Kimsenin
+      girmediği hesap kendiliğinden silinir: misafir hesap 180 gün, Game Center ya da Play Games hesabı 24
       ay sonra.</li>
     </ul>
 
@@ -353,11 +385,13 @@
     <ul>
       <li><strong>Gönderilenler:</strong> altının, görünümlerin ve eşyaların, en iyi skorların ve katların, oyun
       istatistiklerin, başarımların, uygulamanın kendi sayaçları (ör. reklam ve paylaşım sayaçları, ilk açılış zamanı) ve
-      satın almalarının ürün adı ve zamanı; bağlantıyla birlikte uygulama sürümü ve cihaz modeli. Mağaza ödeme
-      jetonların, ayarların, analiz iznin ve performans kayıtların gönderilmez.</li>
-      <li><strong>Neden:</strong> kaydının bir kopyasını korumak, sana oyun içinde hediye (ör. altın ya da görünüm)
-      gönderebilmek ve destek isteklerinde (ör. teslim edilmeyen bir satın alma) yardım etmek. Dayanak: iznin; istediğin
-      zaman geri alabilirsin.</li>
+      satın almalarının ürün adı ve zamanı; bağlantıyla birlikte uygulama sürümü ve cihaz modeli. Mağazaların satın alma
+      jetonları telefonundan hiç çıkmaz (her birinin yalnızca tek yönlü bir kodu gönderilir); ayarların, analiz iznin ve
+      performans kayıtların gönderilmez.</li>
+      <li><strong>Neden:</strong> kaydının bir kopyasını korumak, bizden yardım istediğinde kaydını geri yüklemek ya da
+      düzeltmek (ör. teslim edilmeyen bir satın almanın altını ya da görünümü) ve sana oyun içinde hediye (ör. altın ya da
+      görünüm) gönderebilmek. Böyle bir değişikliği elle yaparız; telefonuna bir sonraki yedeklemede ulaşır, hediye de sen
+      toplayana kadar bekler. Dayanak: iznin; istediğin zaman geri alabilirsin.</li>
       <li><strong>Hesap:</strong> yedek bir oyun hesabına bağlanır; çevrimiçi oynamadıysan bunun için adı olmayan, kimseye
       görünmeyen bir misafir hesap açılır. Veriler 16. bölümdeki gibi ABD’de Google Cloud üzerindeki sunucumuzda saklanır;
       satılmaz, reklam için kullanılmaz, başka kimseyle paylaşılmaz.</li>
