@@ -21,7 +21,7 @@
 
   <main class="doc">
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Zombie Jackpot (iPhone ve Android) · Yürürlük tarihi: 18 Kasım 2026</p>
+    <p class="meta">Zombie Jackpot (iPhone ve Android) · Yürürlük tarihi: 26 Kasım 2026</p>
 
     <p>Bu politika, <strong>Zombie Jackpot</strong> mobil oyununun (“uygulama”; App Store’daki adı “Zombie Jackpot: Kule
     Zıplama”; iPhone’da ve Android’de uygulama kimliği <code>com.zombiejackpot.game</code>) hangi bilgileri neden
@@ -33,7 +33,7 @@
       <ul>
         <li><strong>Oynamak için hesap gerekmez.</strong> Adını, e-posta adresini ya da telefon numaranı hiçbir zaman istemeyiz. Yalnızca isteğe bağlı çevrimiçi oyun bir oyun hesabı kullanır: misafir hesap ya da Game Center / Google Play Games girişin ve seçtiğin oyuncu adı (16. bölüm).</li>
         <li><strong>Oyunun cihazında kaydedilir.</strong> İlerlemen, altınların, kıyafetlerin ve ayarların telefonunda kalır. Oyun sunucumuzu yalnızca çevrimiçi oyun (16. bölüm) ve sen izin verirsen bulut yedeği (17. bölüm) kullanır.</li>
-        <li><strong>Oyun analizleri ve çökme raporları</strong> (Google Analytics for Firebase, Firebase Crashlytics) oyunun nasıl oynandığını ve ne zaman bozulduğunu bize gösterir: rastgele bir uygulama kimliğiyle oyun olayları; adın, e-postan ya da reklam kimliğin asla. Yasanın gerektirdiği yerlerde yalnızca iznin varsa; Ayarlar → OYUN ANALİTİĞİ’nden kapatabilirsin.</li>
+        <li><strong>Oyun analizleri ve çökme raporları</strong> (Google Analytics for Firebase, Firebase Crashlytics) oyunun nasıl oynandığını ve ne zaman bozulduğunu bize gösterir: rastgele bir uygulama kimliğiyle oyun olayları; adın ya da e-postan asla. Android’de, yalnızca izin tercihin buna olanak verdiğinde, hangi reklamımızın oyuncu getirdiğini ölçmek için reklam kimliği de. Yasanın gerektirdiği yerlerde yalnızca iznin varsa; Ayarlar → OYUN ANALİTİĞİ’nden kapatabilirsin.</li>
         <li><strong>Reklamları Google AdMob sunar</strong>; cihazının reklam kimliğini ve benzeri verileri kullanır. Yasanın gerektirdiği yerlerde önce iznin sorulur (iPhone’da reklam kimliğinin kullanılıp kullanılamayacağına Apple’ın takip sorusu karar verir) ve kararını istediğin zaman değiştirebilirsin.</li>
         <li><strong>İsteğe bağlı uygulama içi satın almaları</strong> iPhone’da Apple (App Store), Android’de Google Play yürütür; iPhone’da satın alma durumunu bizim adımıza RevenueCat kontrol eder. Ödeme bilgilerini hiçbir zaman görmeyiz.</li>
         <li><strong>Bildirimler isteğe bağlıdır.</strong> Hatırlatmalar telefonunda planlanır; duyurular Firebase Cloud Messaging ile gelir. Ayarlar → BİLDİRİMLER’den kapatabilirsin.</li>
@@ -100,9 +100,10 @@
       (ürün ve fiyat; ödeme bilgileri asla), ayar değişiklikleri ve kaba performans değerleri (kare hızı aralığı ve grafik
       kalite seviyesi);</li>
       <li>bir <strong>uygulama örneği kimliği</strong> (app-instance ID): Firebase SDK’sının bu kurulum için oluşturduğu
-      rastgele bir kimlik. Adın ya da hesabın değildir. Uygulama, analiz için reklam kimliğinin (Android reklam kimliği;
-      iPhone’da IDFA ve IDFV) ve Android kimliğinin toplanmasını kapatır ve kendine ait hiçbir kullanıcı kimliği
-      atamaz;</li>
+      rastgele bir kimlik. Adın ya da hesabın değildir. Android’de analizlere reklam kimliği de gider: yalnızca izin tercihin reklam depolamaya olanak verdiğinde ve
+      yalnızca hangi reklamımızın bir kuruluma ve ilk oyuna yol açtığını ölçmek için (kişiselleştirilmiş reklam için asla);
+      Android ayarlarından sıfırlayabilir veya silebilirsin. iPhone’da uygulama, analiz için IDFA ve IDFV toplanmasını
+      kapatır. Android kimliği analiz için hiç toplanmaz ve uygulama kendine ait hiçbir kullanıcı kimliği atamaz;</li>
       <li><strong>cihaz bilgileri</strong>: cihaz modeli, işletim sistemi sürümü, dil, ekran boyutu, uygulama sürümü ve
       ilk açılış tarihi;</li>
       <li>Google’ın IP adresinden çıkardığı <strong>yaklaşık konum</strong> (ülke, bölge ya da şehir); IP adresinin

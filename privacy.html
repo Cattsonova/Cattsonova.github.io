@@ -21,7 +21,7 @@
 
   <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Zombie Jackpot (iPhone and Android) · Effective date: 18 November 2026</p>
+    <p class="meta">Zombie Jackpot (iPhone and Android) · Effective date: 26 November 2026</p>
 
     <p>This policy explains what information the mobile game <strong>Zombie Jackpot</strong> (the “app”; on the App
     Store “Zombie Jackpot: Tower Jump”; app ID <code>com.zombiejackpot.game</code> on iPhone and Android) uses, why, and
@@ -33,7 +33,7 @@
       <ul>
         <li><strong>No account needed to play.</strong> We never ask for your name, email address or phone number. Only the optional online play uses a game account: a guest account or your Game Center / Google Play Games sign-in, with a player name you choose (section 16).</li>
         <li><strong>Your game is saved on your device.</strong> Progress, coins, items and settings stay on your phone. Our game server is used only by online play (section 16) and, if you allow it, by the cloud backup (section 17).</li>
-        <li><strong>Gameplay analytics and crash reports</strong> (Google Analytics for Firebase, Firebase Crashlytics) tell us how the game is played and when it breaks: game events with a random app ID, never your name, email or advertising ID. Where the law requires it, only with your consent; you can turn it off in Settings → GAMEPLAY ANALYTICS.</li>
+        <li><strong>Gameplay analytics and crash reports</strong> (Google Analytics for Firebase, Firebase Crashlytics) tell us how the game is played and when it breaks: game events with a random app ID, never your name or email; on Android, and only where your consent choice allows it, also the advertising ID, so we can tell which of our ads brought a player to the game. Where the law requires it, only with your consent; you can turn it off in Settings → GAMEPLAY ANALYTICS.</li>
         <li><strong>Ads are provided by Google AdMob</strong>, which uses your device’s advertising ID and similar data. Where the law requires it, you are asked for consent first (and on iPhone, Apple’s tracking prompt decides whether the advertising ID may be used), and you can change your choice at any time.</li>
         <li><strong>Optional in-app purchases</strong> are handled by Apple (App Store) on iPhone, where RevenueCat checks the purchase status for us, and by Google Play on Android. We never see your payment details.</li>
         <li><strong>Notifications are optional.</strong> Reminders are planned on your phone; announcements use Firebase Cloud Messaging. You can turn them off in Settings → NOTIFICATIONS.</li>
@@ -100,8 +100,10 @@
       never payment details), settings changes, and coarse performance figures (a frame-rate range and the graphics
       quality level);</li>
       <li>an <strong>app-instance ID</strong>: a random ID that the Firebase SDK creates for this installation. It is not
-      your name or account. The app turns off the collection of the advertising ID (Android advertising ID; IDFA and IDFV
-      on iPhone) and of the Android ID for analytics, and it does not set any user ID of its own;</li>
+      your name or account. On Android the analytics also receive the advertising ID, only while your consent choice allows ad storage, and
+      only to measure which of our ads led to an install and a first game (never for personalised ads); you can reset or
+      delete it in your Android settings. On iPhone the app turns off the collection of the IDFA and IDFV for analytics.
+      The Android ID is never collected for analytics, and the app does not set any user ID of its own;</li>
       <li><strong>device information</strong>: device model, operating system version, language, screen size, app version
       and the date of the first launch;</li>
       <li>an <strong>approximate location</strong> (country, region or city) that Google derives from your IP address; the
